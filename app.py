@@ -16,7 +16,7 @@ scaler = artifacts['scaler']
 @app.route('/', methods=['GET'])
 def home():
     return jsonify({
-        "message": "Welcome to Iris Flower Prediction API",
+        "message": "new Deployment done",
         "status": "API is running successfully"
     })
 
