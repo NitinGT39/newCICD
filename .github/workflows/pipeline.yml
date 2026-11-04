@@ -4,17 +4,17 @@ on:
     branches: [main]
   workflow_dispatch:
 
-  jobs:
-    train-and-test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Download project code
-          uses: actions/checkout@v4
-        - name: Setup Python
-          uses: actions/setup-python@v5
-        - name: Install libraries
-          run: pip install -r requirements.txt
-        - name: ML model traing
-          run: python train.py
-        - name: ML model Tesing
-          run: python test.py
+jobs:
+  train-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download project code
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+      - name: Install libraries
+        run: pip install -r requirements.txt
+      - name: ML model traing
+        run: python train.py
+      - name: ML model Tesing
+        run: python test.py
