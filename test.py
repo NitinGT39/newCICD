@@ -28,7 +28,10 @@ X_test = scaler.transform(X_test)
 predictions = model.predict(X_test)
 
 print("Loaded Model Accuracy:",
-      accuracy_score(y_test, predictions))
+acc=accuracy_score(y_test, predictions))
 
 print("Loaded Model Classification Report:")
 print(classification_report(y_test, predictions))
+
+assert acc>=90
+
