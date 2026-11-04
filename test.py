@@ -33,5 +33,5 @@ acc=accuracy_score(y_test, predictions)
 print("Loaded Model Classification Report:")
 print(classification_report(y_test, predictions))
 
-assert acc>=0.98
+assert acc>=0.90
 

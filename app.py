@@ -16,7 +16,7 @@ scaler = artifacts['scaler']
 @app.route('/', methods=['GET'])
 def home():
     return jsonify({
-        "message": "new Deployment done",
+        "message": "new Deployment done with Assertions",
         "status": "API is running successfully"
     })
 
